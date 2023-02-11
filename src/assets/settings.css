@@ -1,0 +1,233 @@
+.settings-container{
+    position: fixed;
+    height: 14rem;
+    width: 20rem;
+    left: 4rem;
+    bottom: 1.5rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgba(255,255,255);
+    display: flex;
+    flex-direction: column;
+    color: black;
+    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .settings-container .account-block{
+        /* background: rgba(0, 0,0,0.1); */
+        height: 20%;
+        display: flex;
+        padding: 0.5rem;
+    }
+
+        .account-block .account-profilelabel{
+            width: 50%;
+            /* border: 2px solid green; */
+            display: flex;
+            align-items: center;
+        }
+
+            .account-profilelabel .account-logo{
+                margin-right: 0.3rem;
+                color:rgb(40, 141, 131);
+            }
+
+            .account-profilelabel .account-name{
+                user-select: none;
+            }
+
+                .account-name .username-h5{
+                    font-weight: 400;
+                }
+
+        .account-block .account-switch{
+            width: 50%;
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+            .account-switch .switchacc-btn{
+                width: 85%;
+                height: 75%;
+                display: inherit;
+                align-items: center;
+                justify-content: center;
+                background: none;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                transition: background 0.2s ease;
+                color: rgba(0, 0, 0, 0.8);
+                user-select: none;
+            }
+
+            .account-switch .switchacc-btn:hover{
+                background: #3bacb638;
+                color: black;
+            }
+
+                .switchacc-btn .switchacc-label{
+                    margin-right: 0.2rem;
+                }
+
+                    .switchacc-label .switch-h6{
+                        font-weight: 400;
+                    }
+
+                    .switchacc-ico .switch-img{
+                        width: 0.5rem;
+                    }
+
+    .settings-container .othersettings-block{
+        /* background: rgba(0, 0,0,0.2); */
+        height: 63%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 0.5rem;
+        border-top: 1px solid #364F6B;
+        /* border-bottom: 1px solid #3bacb687; */
+    }
+
+    .settings-container .settings-h6{
+        font-weight: 400;
+    }
+
+    .settings-container .settings-ico{
+        /* background: rgba(0, 0, 0, 0.2); */
+        color: rgb(40, 141, 131);
+        margin-right: 0.5rem;
+    }
+
+        .othersettings-block .othersettings-label{
+            /* margin-left: 0.5rem; */
+            /* background: rgba(0, 0, 0, 0.2); */
+            width: 95%;
+        }
+
+        .othersettings-block .othersettings-wrapper{
+            display: inherit;
+            align-items: center;
+            height: 33%;
+            /* border: 1px solid green; */
+        }
+
+            .othersettings-wrapper .myprofile-btn,
+            .othersettings-wrapper .notificationsettings-btn,
+            .othersettings-wrapper .feedback-btn{
+                width: 100%;
+                height: 90%;
+                background: none;
+                padding: 0 0.5rem;
+                /* border: 1px solid red; */
+                align-items: center;
+                cursor: pointer;
+                display: inherit;
+                border-radius: 5px;
+                user-select: none;
+                outline: 0;
+                transition: background 0.2s ease;
+            }
+
+            .othersettings-wrapper .myprofile-btn:hover,
+            .othersettings-wrapper .notificationsettings-btn:hover,
+            .othersettings-wrapper .feedback-btn:hover{
+                background: #3bacb638;
+            }
+
+            .othersettings-wrapper .notificationsettings-btn{
+            }
+
+                .notificationsettings-btn .notif-btn{
+                    width: 5%;
+                    height: 100%;
+                    cursor: pointer;
+                    display: inherit;
+                    align-items: center;
+                    justify-content: center;
+                    /* background: rgba(0, 0, 0, 0.2); */
+                    color: rgba(0, 0, 0, 0.474);
+                    transition: color 0.2s ease;
+                }
+
+                .notificationsettings-btn .notif-btn:hover{
+                    color: #FC5185;
+                    
+                }
+
+                    .notif-btn .settings-angle-left-img{
+                        font-size: 0.8rem;
+                    }
+
+            .othersettings-wrapper .feedback-btn{
+            }
+
+    .settings-container .logout-block{
+        background: rgba(0, 0,0,0.3);
+        height: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+        .logout-block .logout-btn{
+            padding: 0;
+            margin: 0;
+            width: 20rem;
+            height: 2.4rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* background: #364F6B;  */
+            background-image: linear-gradient(to right, #364F6B, #506d8f);
+            background-size: 300%;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.5s ease-in;
+            border: 0;
+            outline: 0;
+            border-bottom-right-radius: 10px;
+        }
+
+        .logout-block .logout-btn:hover{
+            /* background: #FC5185; */
+            background-image: linear-gradient(to right, #364F6B, #FC5185);
+            background-position: right;
+            border: 0;
+        }
+
+            .logout-btn .logout-ico,
+            .logout-btn .logout-label{
+                height: 100%;
+                /* width: 100%; */
+                /* border: 1px solid red; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                outline: 0;
+                border: 0;
+                background: none;
+                text-decoration: none;
+            }
+
+                .logout-label .logout-h5{
+                    text-decoration: none;
+                    border: 0;
+                }
+
+            .logout-btn .logout-ico{
+                margin-right: 0.3rem;
+            }
+
+
+

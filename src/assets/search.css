@@ -1,0 +1,136 @@
+/*--------------------Search------------------*/
+
+.search-container{
+    position: fixed;
+    width: 94%;
+    height: 100%;
+    left: 4rem;
+    top: 0;
+    padding: 3rem 5rem;
+    background: #0a1a2d ;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+    .search-container .searchbox-block{
+        height: 10%;
+        /* border: 1px solid white; */
+        border-bottom: 4px solid #364F6B;
+    }
+
+        .searchbox-block .searchbox-input{
+            width: 100%;
+            height: 100%;
+            outline: 0;
+            border: 0;
+            background: none;
+            font-size: 2.3rem;
+            padding: 1rem 0.5rem;
+            font-weight: 500;
+            letter-spacing: 0.03rem;
+            color: white;
+        }
+
+    .search-container .searchcategories-block{
+        /* border: 1px solid white; */
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+        .searchcategories-block .categobtn{
+            width: 7rem;
+            padding: 0.5rem 0;
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* border: 1px solid white; */
+            margin-right: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            user-select: none;
+        }
+
+        .searchcategories-block .categobtn:hover{
+            background: #506d8f;
+        }
+
+        .searchcategories-block .categobtn.selected{
+            border: 1px solid white;
+        }
+        
+    .search-container .searchrecent-block{
+        user-select: none;
+        display: block;
+        max-height: 29rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: auto;
+        /* border: 1px solid white; */
+    }
+
+        .searchrecent-block .recentsearch-header{
+            /* border: 1px solid white; */
+            display: flex;
+            align-items: center;
+            height: 4rem;
+        }
+
+            .recentsearch-header .recentsearch-ico{
+                height: 100%;
+                display: inherit;
+                align-items: center;
+                margin-right: 1rem;
+            }
+
+            .recentsearch-header .recentsearch-label{
+                height: 100%;
+                display: inherit;
+                align-items: center;
+            }
+
+        .searchrecent-block .recentsearch-content{
+            /* border: 1px solid white; */
+            padding: 1rem;
+            padding-top: 0;
+                /* display: flex;
+                align-items: center; */
+        }
+
+            .recentsearch-content li{
+                list-style: none;
+            }
+
+            .recentsearch-content .recent-li{
+                display: flex;
+                width: 20rem;
+                height: 2rem;
+                padding: 0 1rem;
+                align-items: center;
+                margin-bottom: 0.8rem;
+                /* border: 1px solid blue; */
+                cursor: pointer;
+                border-radius: 7px;
+                transition: background 0.2s ease;
+            }
+
+            .recentsearch-content .recent-li:hover{
+                background: #506d8f;
+            }
+
+                .recent-li .recent-ico,
+                .recent-li .recent-label{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .recent-li .recent-ico{
+                    margin-right: 0.5rem;
+                }
+
+                    .recent-label .recent-name{
+                        font-weight: 400;
+                    }
